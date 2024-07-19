@@ -1,0 +1,86 @@
+ant:
+<ant>
+  <mkdir dir="C:\Users\Computerman\Documents\MATLAB\deploy\caspsoft\distrib" />
+  <mkdir dir="C:\Users\Computerman\Documents\MATLAB\deploy\caspsoft\src" />
+</ant>
+mcc -o caspsoft -W WinMain:caspsoft -T link:exe -d C:\Users\Computerman\Documents\MATLAB\deploy\caspsoft\src -w enable:specified_file_mismatch -w enable:repeated_file -w enable:switch_ignored -w enable:missing_lib_sentinel -w enable:demo_license -v C:\Users\Computerman\Documents\MATLAB\deploy\llcsoft.m -a C:\Users\Computerman\Documents\MATLAB\deploy\caspheader.m -a C:\Users\Computerman\Documents\MATLAB\deploy\getRatio.m -a C:\Users\Computerman\Documents\MATLAB\deploy\llcsoft.fig -a C:\Users\Computerman\Documents\MATLAB\deploy\lpanalysis.m -a C:\Users\Computerman\Documents\MATLAB\deploy\lpsynthesis.m -a C:\Users\Computerman\Documents\MATLAB\deploy\pkfile.m -a C:\Users\Computerman\Documents\MATLAB\deploy\rice.dll -a C:\Users\Computerman\Documents\MATLAB\deploy\ricepack.m -a C:\Users\Computerman\Documents\MATLAB\deploy\riceunpack.m -a C:\Users\Computerman\Documents\MATLAB\deploy\unpkfile.m 
+MATLAB:I18n:InconsistentLocale - The system locale setting, ar_MA.1256, is different from the user locale setting, fr_CH.1252.
+Compiler version: 4.13 (R2010a) 
+Processing C:\Users\Computerman\Documents\MATLAB\deploy\llcsoft.fig
+Processing C:\Program Files\MATLAB\R2010a\toolbox\signal\mcc.enc
+Processing C:\Program Files\MATLAB\R2010a\toolbox\matlab\guide\guideopts.fig
+Processing C:\Program Files\MATLAB\R2010a\toolbox\matlab\winfun\actxcontrolselect.fig
+Processing C:\Program Files\MATLAB\R2010a\toolbox\matlab\winfun\actxcontrolcreateproperty.fig
+Processing include files...
+2 item(s) added.
+Processing directories installed with MCR...
+The file C:\Users\Computerman\Documents\MATLAB\deploy\caspsoft\src\mccExcludedFiles.log contains a list of functions excluded from the CTF archive.
+3 item(s) added.
+Generating MATLAB path for the compiled application...
+Created 41 path items.
+Begin validation of MEX files: Mon Jun 14 16:57:49 2010 
+Validating 'C:\Program Files\MATLAB\R2010a\toolbox\signal\signal\levinson.mexw32'. 
+Found M-file 'C:\Program Files\MATLAB\R2010a\toolbox\signal\signal\levinson.m'. 
+MEX file 
+    'C:\Program Files\MATLAB\R2010a\toolbox\signal\signal\levinson.mexw32' 
+ is valid. It contains 'mexFunction.' 
+Validating 'C:\Users\Computerman\Documents\MATLAB\deploy\rice.dll'. 
+No conflicting M-file found. 
+End validation of MEX files: Mon Jun 14 16:57:49 2010 
+Parsing file "C:\Users\Computerman\Documents\MATLAB\deploy\llcsoft.m"
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Program Files\MATLAB\R2010a\toolbox\compiler\deploy\deployprint.m"
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Program Files\MATLAB\R2010a\toolbox\compiler\deploy\printdlg.m"
+	(Referenced from: "Compiler Command Line"). 
+Deleting 2 temporary MEX authorization files. 
+Removing: 'C:\Users\COMPUT~1\AppData\Local\Temp\mathworks_tmp_2148_30963_2148.auth'. 
+Removing: 'C:\Users\COMPUT~1\AppData\Local\Temp\mathworks_tmp_2148_7350_2148.auth'. 
+Generating file "C:\Users\Computerman\Documents\MATLAB\deploy\caspsoft\src\caspsoft_main.c". 
+Generating file "C:\Users\Computerman\Documents\MATLAB\deploy\caspsoft\src\caspsoft_delay_load.c". 
+Generating file "C:\Users\Computerman\Documents\MATLAB\deploy\caspsoft\src\readme.txt". 
+Generating file "C:\Users\Computerman\Documents\MATLAB\deploy\caspsoft\src\caspsoft_mcc_component_data.c". 
+Contents of temporary response file 'C:\Users\COMPUT~1\AppData\Local\Temp\mathworks_tmp_2148_17737': 
+ ...................... 
+' -O -v -output "caspsoft" -I"C:\Users\Computerman\Documents\MATLAB\deploy\caspsoft\src" "C:\Users\Computerman\Documents\MATLAB\deploy\caspsoft\src\caspsoft_main.c" "C:\Users\Computerman\Documents\MATLAB\deploy\caspsoft\src\caspsoft_delay_load.c" "C:\Users\Computerman\Documents\MATLAB\deploy\caspsoft\src\caspsoft_mcc_component_data.c" -link exe  -env MCR_DELAYLOAD=/delayload:mclmcrrt713.dll -env MCR_DELAYLIB=delayimp.lib -outdir "C:\Users\Computerman\Documents\MATLAB\deploy\caspsoft\src"' 
+...................... 
+Executing command: ""C:\Program Files\MATLAB\R2010a\bin\mbuild"  "@C:\Users\COMPUT~1\AppData\Local\Temp\mathworks_tmp_2148_17737"" 
+ This is mbuild Copyright 1984-2006 The MathWorks, Inc.
+-> Default options filename found in C:\Users\Computerman\AppData\Roaming\MathWorks\MATLAB\R2010a
+----------------------------------------------------------------
+->    Options file           = C:\Users\Computerman\AppData\Roaming\MathWorks\MATLAB\R2010a\compopts.bat
+->    COMPILER               = cl
+->    Compiler flags:
+         COMPFLAGS           = -MD -c -Zp8 -GR -W3 -EHsc- -Zc:wchar_t- -nologo /D_CRT_SECURE_NO_DEPRECATE
+         OPTIMFLAGS          = -O2 -DNDEBUG
+         DEBUGFLAGS          = -Z7
+         arguments           =  -IC:\USERS\COMPUT~1\DOCUME~1\MATLAB\DEPLOY\CASPSOFT\SRC
+         Name switch         = /Fo
+->    Pre-linking commands   = 
+->    LINKER                 = link
+->    Link directives:
+         LINKFLAGS           = kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib oleaut32.lib ole32.lib uuid.lib odbc32.lib odbccp32.lib /LIBPATH:"C:\PROGRA~1\MATLAB\R2010a\extern\lib\win32\microsoft" /nologo /manifest /manifestfile:"C:\USERS\COMPUT~1\DOCUME~1\MATLAB\DEPLOY\CASPSOFT\SRC\caspsoft.msvc.manifest" mclmcrrt.lib delayimp.lib /delayload:mclmcrrt713.dll
+         LINKFLAGSPOST       = 
+         Name directive      = "/out:C:\USERS\COMPUT~1\DOCUME~1\MATLAB\DEPLOY\CASPSOFT\SRC\caspsoft.exe"
+         File link directive = 
+         Lib. link directive = 
+         Rsp file indicator  = @
+->    Resource Compiler      = rc /fo "C:\USERS\COMPUT~1\DOCUME~1\MATLAB\DEPLOY\CASPSOFT\SRC\.res"
+->    Resource Linker        = 
+----------------------------------------------------------------
+--> cl  -IC:\USERS\COMPUT~1\DOCUME~1\MATLAB\DEPLOY\CASPSOFT\SRC -MD -c -Zp8 -GR -W3 -EHsc- -Zc:wchar_t- -nologo /D_CRT_SECURE_NO_DEPRECATE /FoC:\USERS\COMPUT~1\APPDATA\LOCAL\TEMP\MBUILD~1\caspsoft_main.obj -IC:\PROGRA~1\MATLAB\R2010a\extern\include -IC:\PROGRA~1\MATLAB\R2010a\simulink\include -O2 -DNDEBUG C:\Users\Computerman\Documents\MATLAB\deploy\caspsoft\src\caspsoft_main.c
+caspsoft_main.c
+--> cl  -IC:\USERS\COMPUT~1\DOCUME~1\MATLAB\DEPLOY\CASPSOFT\SRC -MD -c -Zp8 -GR -W3 -EHsc- -Zc:wchar_t- -nologo /D_CRT_SECURE_NO_DEPRECATE /FoC:\USERS\COMPUT~1\APPDATA\LOCAL\TEMP\MBUILD~1\caspsoft_delay_load.obj -IC:\PROGRA~1\MATLAB\R2010a\extern\include -IC:\PROGRA~1\MATLAB\R2010a\simulink\include -O2 -DNDEBUG C:\Users\Computerman\Documents\MATLAB\deploy\caspsoft\src\caspsoft_delay_load.c
+caspsoft_delay_load.c
+--> cl  -IC:\USERS\COMPUT~1\DOCUME~1\MATLAB\DEPLOY\CASPSOFT\SRC -MD -c -Zp8 -GR -W3 -EHsc- -Zc:wchar_t- -nologo /D_CRT_SECURE_NO_DEPRECATE /FoC:\USERS\COMPUT~1\APPDATA\LOCAL\TEMP\MBUILD~1\caspsoft_mcc_component_data.obj -IC:\PROGRA~1\MATLAB\R2010a\extern\include -IC:\PROGRA~1\MATLAB\R2010a\simulink\include -O2 -DNDEBUG C:\Users\Computerman\Documents\MATLAB\deploy\caspsoft\src\caspsoft_mcc_component_data.c
+caspsoft_mcc_component_data.c
+    Contents of C:\USERS\COMPUT~1\APPDATA\LOCAL\TEMP\MBUILD~1\mbuild_tmp.rsp:
+  C:\USERS\COMPUT~1\APPDATA\LOCAL\TEMP\MBUILD~1\caspsoft_main.obj  C:\USERS\COMPUT~1\APPDATA\LOCAL\TEMP\MBUILD~1\caspsoft_delay_load.obj  C:\USERS\COMPUT~1\APPDATA\LOCAL\TEMP\MBUILD~1\caspsoft_mcc_component_data.obj
+--> link "/out:C:\USERS\COMPUT~1\DOCUME~1\MATLAB\DEPLOY\CASPSOFT\SRC\caspsoft.exe" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib oleaut32.lib ole32.lib uuid.lib odbc32.lib odbccp32.lib /LIBPATH:"C:\PROGRA~1\MATLAB\R2010a\extern\lib\win32\microsoft" /nologo /manifest /manifestfile:"C:\USERS\COMPUT~1\DOCUME~1\MATLAB\DEPLOY\CASPSOFT\SRC\caspsoft.msvc.manifest" mclmcrrt.lib delayimp.lib /delayload:mclmcrrt713.dll  @C:\USERS\COMPUT~1\APPDATA\LOCAL\TEMP\MBUILD~1\MBUILD~1.RSP  
+--> mt.exe -outputresource:"C:\USERS\COMPUT~1\DOCUME~1\MATLAB\DEPLOY\CASPSOFT\SRC\caspsoft.exe";1 -manifest "C:\USERS\COMPUT~1\DOCUME~1\MATLAB\DEPLOY\CASPSOFT\SRC\caspsoft.msvc.manifest"
+Microsoft (R) Manifest Tool version 5.2.3790.2075
+Copyright (c) Microsoft Corporation 2005. 
+All rights reserved.
+--> del "C:\USERS\COMPUT~1\DOCUME~1\MATLAB\DEPLOY\CASPSOFT\SRC\caspsoft.msvc.manifest"
+copy 'C:\Users\Computerman\Documents\MATLAB\deploy\caspsoft\src\readme.txt' 'C:\Users\Computerman\Documents\MATLAB\deploy\caspsoft\distrib\readme.txt'
+copy 'C:\Users\Computerman\Documents\MATLAB\deploy\caspsoft\src\caspsoft.exe' 'C:\Users\Computerman\Documents\MATLAB\deploy\caspsoft\distrib\caspsoft.exe'
